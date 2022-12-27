@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3F5FC;
+
+    font-family: 'Inter', sans-serif;
+}
+.title{
+    margin: top;
+    font-size: 40px;
+    text-align: left;
+}
+
+.container{
+    margin: auto;
+    width: 850px;
+    height: 650px;
+    padding: 0px;
+}
+
+.logo{
+    width: 100%;
+    float: left;
+}
+
+.left{
+    float: left;
+    width: 70%;
+    height: 70%;
+    border-radius: 15px;
+   
+
+}
+
+.right{
+    float: right;
+    width: 30%;
+    height: 558px; 
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+}
+
+.left-button{
+    float: left;
+    width: 70%;
+    height: auto;
+    border-radius: 15px;   
+    padding-bottom: 20px;
+}
+
+.logo-img{
+    margin-top: 3%;
+    margin-left: 5%;
+    float: inherit;
+}
+
+.title-logo{
+    float: inherit;
+    margin-left: 15%;
+}
+
+.text-input{
+    resize: none;
+    margin-right: 10px;
+    width: 98%;
+    height: 300px;
+    color: #0A3871;
+    font-size: 28px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    }
+
+#imgDer{
+    margin-left: 2%;
+    margin-top: 5%;
+    width: 90%;
+    height: auto;
+}
+
+#texto{
+    text-align: center;
+
+}
+
+#texto2{
+    float: left;
+    margin-left: 10%;
+    color: #0A3871;
+    width: 80%;
+height: 35%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#btn-encriptar{
+    padding: 2px1.5rem;
+    width: 225px;
+    height: 50px;
+    border-radius: 1.5rem;
+    margin-left: 10%;
+    background: #0A3871;    
+    font-size: 24px;    
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 12px;
+    background-position-y: 4px;
+
+}
+
+#btn-encriptar:hover{    
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+
+}
+
+button:active{
+    transform: translateY(3px);
+}
+
+
+#btn-desencriptar{
+    padding: 2px;
+    width: 225px;
+    height: 50px;
+    border-radius: 24px;
+    margin-left: 10%;
+    background: #DBDFE8;
+    font-size: 24px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 2px;
+    background-position-y: 4px;
+}
+
+#btn-desencriptar:hover{
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+
+#copiar{
+    margin-left: 15%;
+    margin-top: 495px;
+    padding: 2px;
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    border-radius: 24px;
+    display: none;
+    font-size: 24px;
+
+
+}
+
+#aviso{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+footer {
+    
+    
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  footer span {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1rem;
+  }
+  
+  footer span:nth-child(1) {
+    color: #1b1b1b;
+  }
+  
+  footer span:nth-child(2) {
+    width: 1rem;
+    margin: 1rem 2rem;
+  }
+  
+  
+  
+  .icon_linkedin {
+    width: 2rem;
+    height: 2rem;
+    
+  }
+  
+  .icon_github {
+    width: 2rem;
+    height: 2rem;
+  }  
+
+
+@media screen and (max-width: 940px){
+
+    .container{
+        width: 100%;
+        text-align: center;
+}
+    .left{
+        width: 100%;
+        height: 20%;
+    }
+
+    #texto2{
+        padding: 10px;
+        height: 45%;
+        margin-bottom: 15px;
+    }
+
+    .right{
+        width: 100%;
+        height: 30%;
+    }
+
+    #imgDer{
+        display: none;
+    }
+    .left-button{
+        width: 90%;
+        
+        
+    }
+
+    #copiar{
+        margin-top: 78px;
+        margin-left: 2%;
+    }
+
+    
+
+   /* ==== Responsive movil ==== */
+
+@media screen and (max-width: 540px) {
+    #container {
+        font-size: 75%;
+    }
+
+    body {
+        padding: 0 1rem;
+    }
+
+    .right {
+        flex-direction: column;
+    }
+}
+
+
+.left {
+    font-size: xx-large;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap; 
+    width: 20ch; 
+    animation: escribiendo 2s steps(20);          
+    overflow: hidden;
+}
+
+.cursor{
+animation: 0.6s parpadeo-cursor infinite;
+}
+
+@keyframes escribiendo {
+from {
+    width: 0;
+}
+}
+
+@keyframes parpadeo-cursor {
+50% {
+    opacity: 0;
+}
+    
+}
+}
